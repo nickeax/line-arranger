@@ -1,0 +1,11 @@
+textarea#textEntry {
+  padding: 2rem;
+  width: 100%;
+  color: aliceblue;
+  font-family: serif;
+  background-color: #000;
+}
+
+button {
+  margin: 0.2rem;
+}

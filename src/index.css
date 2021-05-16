@@ -1,0 +1,49 @@
+
+@import "./ui.css";
+
+*, *::before, *::before {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 150px min-content 150px;
+  grid-template-areas: 
+  "header header header"
+  "lp cp rp"
+  "footer footer footer" 
+}
+
+.header, .footer {
+  background-color: rgb(208, 208, 208);
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.leftPane, .centerPane, .rightPane {
+  width: 100%;
+  background-color: #333;
+  grid-area: lp;
+}
+.centerPane {
+  background-color: rgb(74, 74, 74);
+  grid-area: cp;
+}
+.rightPane {
+  background-color: rgb(108, 108, 108);
+  grid-area: rp;
+}
+
+.outputRow {
+  margin: 0.2rem;
+  color: aliceblue;
+  font-weight: bold;
+}
