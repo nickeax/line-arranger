@@ -21,10 +21,14 @@ function processCenterPaneOutput(str) {
 }
 
 let ll = new LinkedList()
-ll.InsertEnd(new Node())
+ll.InsertEnd("Some data 001")
+ll.InsertEnd("Some data 002")
+ll.InsertEnd("Some data 003")
+ll.InsertEnd("Some data 004")
+ll.InsertEnd("Some data 005")
 console.log(ll)
 
-ll.PrintList()
+// ll.PrintList()
 
 /** 
 The lines of text will be added to an object that has an order index

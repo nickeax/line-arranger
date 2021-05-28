@@ -1,11 +1,12 @@
-import { Node } from "./node.js";
+import { DataNode } from "./node.js";
 
 export class LinkedList {
   head = null
-  constructor (data) {
+  constructor () {
     // Create initial internal Node that will be the placeholder for future operations
-    this.head = new Node(data, null, this.next)
+    this.head = new DataNode("")
     this.head.next = null
+    this.head.prev = null
   }
 
   InsertEnd(data) {
@@ -14,9 +15,8 @@ export class LinkedList {
       tmpNode = tmpNode.prev
     }
     // tmpNode must be the tail
-    let newNode = new Node()
-    tmpNode.prev = node
-    console.log(tmpNode.data)
+    let newNode = new DataNode(data)
+    tmpNode.prev = newNode
   }
 
   InsertHead(node) {

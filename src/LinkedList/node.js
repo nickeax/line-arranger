@@ -1,11 +1,9 @@
-export class Node {
+export class DataNode {
   prev = null
   next = null
   data = ""
 
-  constructor(data, p, n) {
-    this.prev = p
-    this.next = n
+  constructor(data) {
     this.data = data
   }
 
