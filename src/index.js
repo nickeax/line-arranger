@@ -21,11 +21,16 @@ function processCenterPaneOutput(str) {
 }
 
 let ll = new LinkedList()
-ll.InsertEnd("Some data 001")
-ll.InsertEnd("Some data 002")
-ll.InsertEnd("Some data 003")
-ll.InsertEnd("Some data 004")
-ll.InsertEnd("Some data 005")
+// ll.InsertEnd("End data 001")
+// ll.InsertEnd("End data 002")
+// ll.InsertEnd("End data 003")
+// ll.InsertEnd("End data 004")
+// ll.InsertEnd("End data 005")
+ll.InsertHead("Head data 001")
+ll.InsertHead("Head data 002")
+ll.InsertHead("Head data 003")
+ll.InsertHead("Head data 004")
+ll.InsertHead("Head data 005")
 console.log(ll)
 
 // ll.PrintList()
